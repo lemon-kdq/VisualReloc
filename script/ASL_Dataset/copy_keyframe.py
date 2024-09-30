@@ -18,12 +18,14 @@ if __name__ == '__main__':
         keyframes = json.load(file) 
     # 遍历数据并复制文件
     for key, value in keyframes.items():
-       image_path = value['image_path']
+        if key == "camera":
+            None
+        else:
+            image_path = value['image_path']
        # 提取文件名
-       file_name = os.path.basename(image_path)
-       # 构建目标文件路径
-       target_path = os.path.join(output_folder, file_name)
-
+            file_name = os.path.basename(image_path)
+            # 构建目标文件路径
+            target_path = os.path.join(output_folder, file_name)
        # 复制文件
-       shutil.copy(image_path, target_path)
-       print(f"复制文件: {image_path} 到 {target_path}")
+            shutil.copy(image_path, target_path)
+            print(f"复制文件: {image_path} 到 {target_path}")
