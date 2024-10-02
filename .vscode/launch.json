@@ -1,0 +1,16 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": ["-f","/media/kdq/kdq_st_3t_1/Datasets/sfm/V2_01_easy_try2/triangulated/noba","-k","/media/kdq/kdq_st_3t_1/Datasets/VIO/asl/V2_01_easy/cam0/keyframe.json","-o","/home/kdq/Workspace/SLAM/VisualReloc/demo/output1"]
+        }
+    ]
+}
